@@ -1,0 +1,12 @@
+
+<h1> Result Page!!!</h1>
+<ul>
+    <% data["Search"].forEach(function(movie){ %>
+       <li><%= movie["Title"] %> - <%= movie["Year"] %> </li>
+       <img src="<%= movie['Poster'] %>" />
+       <br />
+       <a href="https://www.imdb.com/title/<%= movie['imdbID'] %>">IMDB</a>
+    <% }) %>
+</ul>
+
+<button><a href="/" style="text-decoration:none">Search Again</a> </button>
